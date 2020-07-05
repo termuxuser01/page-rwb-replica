@@ -1,0 +1,46 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  display: inline-block;
+}
+
+h2{
+  font-weight: bold;
+  color: rgba(245, 56, 22, 0.911);
+  margin-bottom: 5px;
+}
+
+h3{
+  margin-bottom: 3px;
+}
+
+.my-grid{
+  display: inline-grid;
+  grid-template-rows: 200px;
+  grid-template-columns: repeat(3, 200px);
+}
+
+.extense{
+  display: inline-grid;
+  grid-row: [center] 200px;
+  grid-column: [left-start] 250px [left-end right-start] 250px;
+}
+
+.grid-item4{
+  grid-area: center / left;
+}
+
+.grid-item4{
+  grid-area: center / right;
+}
+
+[class^='grid-item']{
+  outline: 2px fuchsia solid;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  text-justify: center;
+}
